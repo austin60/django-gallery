@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'prac',
@@ -85,9 +86,10 @@ DATABASES = {
         'PASSWORD':os.environ.get('PASSWORD'),
         'HOST':'localhost'
     }
-}
+}"""
 
-
+DATABASES = {
+    'default':dj_database_url.parse(os.environ.get('DB_URL'))}
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
