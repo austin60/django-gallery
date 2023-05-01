@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lora&family=Nunito:wght@300&family=Raleway:wght@100&family=Roboto:wght@100;300&display=swap"
+     rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {%block content %}
+    <div class="contact">
+        <div class="contact-content">
+        <div class="socials">
+            <span class="soc-heading">Let's get in touch</span>
+            <div class="social-section">
+                <img src="static/images/email.png" alt="">
+                <span>okongoaustine60@gmail.com</span>
+            </div>
+            <div class="social-section">
+                <img src="static/images/facebook.png" alt="">
+                <span>Facebook</span>
+            </div>
+            <div class="social-section">
+                <img src="static/images/twitter.png" alt="">
+                <span>Austine_okongo</span>
+            </div>
+            <div class="social-section">
+                <img src="static/images/instagram.png" alt="">
+                <span>Instagram</span>
+            </div>
+            <div class="social-section">
+                <img src="static/images/pinterest.png" alt="">
+                <span>Pinterest</span>
+            </div>
+            <div class="social-section">
+                <img src="static/images/telephone.png" alt="">
+                <span>0703303223</span>
+            </div>
+        </div>
+        <div class="form">
+        <form action="" class="contact-form">
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="what's on your mind"></textarea>  
+            <input type="submit" value="send message" class="submit">
+        </form>
+        </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

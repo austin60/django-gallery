@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css?{% now 'U' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lora&family=Nunito:wght@300&family=Raleway:wght@100&family=Roboto:wght@100;300&display=swap"
+     rel="stylesheet">
+    <title>studio</title>
+</head>
+<body>
+    <nav>
+        <div>
+        <span>Studio</span>
+        </div>
+        <div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a> </li>
+            <li><a href="{% url 'prod' %}">Gallery</a></li>
+            <li><a href="{% url 'ab' %}">About</a></li>
+            <li><a href="{% url 'cont' %}">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
